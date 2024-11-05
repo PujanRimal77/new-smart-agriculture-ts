@@ -1,8 +1,8 @@
-import { Farmer } from './entities/Farmer';
-import { MobileApp } from './entities/MobileApp';
-import { Sensor } from './entities/Sensor';
-import { IrrigationSystem } from './entities/IrrigationSystem';
-import { EdgeDevice } from './entities/EdgeDevice';
+import { Farmer } from './src/entities/Farmer';
+import { MobileApp } from './src/entities/MobileApp';
+import { Sensor } from './src/entities/Sensor';
+import { IrrigationSystem } from './src/entities/IrrigationSystem';
+import { EdgeDevice } from './src/entities/EdgeDevice';
 
 // Creating instances
 const farmer = new Farmer(1, "John Doe", "Farm A");
