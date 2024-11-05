@@ -1,3 +1,5 @@
+// Comment added to check CI pipelines workflow
+
 export class Farmer {
     farmerID: number;
     name: string;
