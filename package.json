@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",     
-    "test": "jest"     
+    "test": "npx jest"     
   },
   "keywords": [],
   "author": "",
