@@ -22,3 +22,5 @@ export class Sensor {
         console.log(`Calibrating sensor ${this.sensorID}`);
     }
 }
+
+// updated sensor
