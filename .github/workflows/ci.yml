@@ -24,6 +24,24 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Build project
+        run: npm run build
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build  # This will run the test job only if the build job succeeds
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # or the version you're using
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Run tests
         run: npx jest
-
