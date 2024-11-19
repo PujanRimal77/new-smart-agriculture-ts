@@ -1,4 +1,5 @@
 "use strict";
+// Comment added to check CI pipelines workflow
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Farmer = void 0;
 class Farmer {

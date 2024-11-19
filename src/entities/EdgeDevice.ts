@@ -22,3 +22,4 @@ export class EdgeDevice {
         console.log(`Edge device ${this.deviceID} sending data to central server, last synced at ${this.lastSyncTime}`);
     }
 }
+

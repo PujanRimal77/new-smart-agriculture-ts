@@ -19,4 +19,5 @@ class Sensor {
     }
 }
 exports.Sensor = Sensor;
+// updated sensor
 //# sourceMappingURL=Sensor.js.map
