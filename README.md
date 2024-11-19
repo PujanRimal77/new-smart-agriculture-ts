@@ -63,7 +63,7 @@ Testing
 Running Tests
 To run the Jest test suite, use the following command:
 
-bashCopynpm test
+# npm test
 
 
 Test Case Explanations
