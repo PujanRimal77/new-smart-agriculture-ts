@@ -62,7 +62,10 @@ Project Link: https://github.com/PujanRimal77/new-smart-agriculture-ts.git
 Testing
 Running Tests
 To run the Jest test suite, use the following command:
+
 bashCopynpm test
+
+
 Test Case Explanations
 EdgeDevice Tests
 
