@@ -63,36 +63,33 @@ Testing
 Running Tests
 To run the Jest test suite, use the following command:
 
-npm test
+```bash
+ npm test
+```
 
+# Test Case Explanations
+## EdgeDevice Tests
+- **should create an EdgeDevice instance with correct properties**: Verifies correct initialization of EdgeDevice
+- **collectSensorData** should log the correct message: Checks sensor data collection logging
+- **processLocalData** should log the correct message: Validates local data processing logging
+- **sendDataToServer** should log the correct message: Confirms data transmission logging
 
- # Test Case Explanations
-EdgeDevice Tests
+## Farmer Tests
+- **should create a Farmer instance with correct properties**: Ensures correct Farmer object creation
+- **viewCropData** should log the correct message: Validates crop data viewing functionality
+- **receiveAlerts** should log the correct message: Checks alert reception mechanism
+- **adjustIrrigation** should log the correct message: Confirms irrigation adjustment logging
 
-should create an EdgeDevice instance with correct properties: Verifies correct initialization of EdgeDevice
-collectSensorData should log the correct message: Checks sensor data collection logging
-processLocalData should log the correct message: Validates local data processing logging
-sendDataToServer should log the correct message: Confirms data transmission logging
+## IrrigationSystem Tests
+- **should create an IrrigationSystem instance with correct properties**: Verifies IrrigationSystem initialization
+- **adjustWater** should update water flow and log the correct message: Checks water flow adjustment
+- **reportStatus** should log the correct message: Validates status reporting
 
-Farmer Tests
-
-should create a Farmer instance with correct properties: Ensures correct Farmer object creation
-viewCropData should log the correct message: Validates crop data viewing functionality
-receiveAlerts should log the correct message: Checks alert reception mechanism
-adjustIrrigation should log the correct message: Confirms irrigation adjustment logging
-
-IrrigationSystem Tests
-
-should create an IrrigationSystem instance with correct properties: Verifies IrrigationSystem initialization
-adjustWater should update water flow and log the correct message: Checks water flow adjustment
-reportStatus should log the correct message: Validates status reporting
-
-MobileApp Tests
-
-should create a MobileApp instance with correct properties: Ensures MobileApp object creation
-displayDashboard should log the correct message: Checks dashboard display functionality
-sendCommands should log the correct message: Validates command sending
-receiveNotifications should log the correct message: Confirms notification reception
+## MobileApp Tests
+- **should create a MobileApp instance with correct properties**: Ensures MobileApp object creation
+- **displayDashboard** should log the correct message: Checks dashboard display functionality
+- **sendCommands** should log the correct message: Validates command sending
+- **receiveNotifications** should log the correct message: Confirms notification reception
 
 Test Journaling
 Test Run: November 19, 2024
