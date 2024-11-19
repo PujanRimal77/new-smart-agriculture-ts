@@ -63,10 +63,10 @@ Testing
 Running Tests
 To run the Jest test suite, use the following command:
 
-bashCopynpm test
+npm test
 
 
-Test Case Explanations
+ # Test Case Explanations
 EdgeDevice Tests
 
 should create an EdgeDevice instance with correct properties: Verifies correct initialization of EdgeDevice
