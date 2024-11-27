@@ -1,6 +1,6 @@
 {
   "name": "smart-agriculture-ts",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A TypeScript-based Smart Agriculture System for precision farming",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,11 @@
     "test": "jest",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["agriculture", "IoT", "smart farming"],
+  "keywords": [
+    "agriculture",
+    "IoT",
+    "smart farming"
+  ],
   "author": "Pujan Rimal",
   "license": "ISC",
   "devDependencies": {
@@ -26,6 +30,8 @@
   },
   "files": [
     "dist",
+    "src",
+    "tests",
     "README.md",
     "LICENSE"
   ]
