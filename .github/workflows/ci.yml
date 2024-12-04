@@ -3,12 +3,74 @@ name: CI
 on:
   push:
     branches:
+      - mainname: CI/CD Pipeline
+
+on:
+  push:
+    branches:
       - main
   pull_request:
     branches:
       - main
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Use the Node.js version for your project
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Set Jest permissions
+        run: chmod +x ./node_modules/.bin/jest
+
+      - name: Build the project
+        run: npm run build
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npx jest
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    if: success()
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy to Production
+        run: |
+          echo "Deploying to production..."
+          # Add your deployment logic here
+          # Example: SFTP, FTP, SSH commands, or deploying to cloud platforms
+          # For example, using rsync:
+          # rsync -avz --delete ./build/ user@yourserver:/path/to/deploy/
+
   build:
     runs-on: ubuntu-latest
 
