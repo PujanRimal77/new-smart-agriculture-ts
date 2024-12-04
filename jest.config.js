@@ -1,10 +1,10 @@
 module.exports = {
-    preset: 'ts-jest',
-    testEnvironment: 'node',
-    testPathIgnorePatterns: ['/node_modules/', '/dist/'],
-    moduleFileExtensions: ['ts', 'js', 'json', 'node'],
-    transform: {
-      '^.+\\.ts$': 'ts-jest',
-    },
-  };
-  
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  testMatch: ["**/src/tests/**/*.test.ts", "**/src/tests/**/*.spec.ts"],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  roots: ['<rootDir>/src/tests'],
+  transform: {
+    "^.+\\.tsx?$": "ts-jest"
+  }
+};
