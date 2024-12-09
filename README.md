@@ -1,3 +1,6 @@
+[![CI/CD Pipeline](https://github.com/PujanRimal77/new-smart-agriculture-ts/actions/workflows/ci.yml/badge.svg)](https://github.com/PujanRimal77/new-smart-agriculture-ts/actions/workflows/ci.yml)
+
+
 # Smart Agriculture System
 
 ## Overview
